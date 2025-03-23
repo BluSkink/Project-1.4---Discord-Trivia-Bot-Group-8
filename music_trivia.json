@@ -1,0 +1,32 @@
+import json
+
+# Define the trivia data
+music_trivia = [
+    {
+        "category": "Pop",
+        "question": "Who is known as the 'King of Pop'?",
+        "options": ["Michael Jackson", "Elvis Presley", "Justin Bieber", "Bruno Mars"],
+        "answer": "Michael Jackson"
+    },
+    {
+        "category": "Rock",
+        "question": "Which band released the album 'The Dark Side of the Moon'?",
+        "options": ["The Beatles", "Pink Floyd", "Led Zeppelin", "Queen"],
+        "answer": "Pink Floyd"
+    },
+    {
+        "category": "Hip-Hop",
+        "question": "Who is the artist behind the hit song 'Sicko Mode'?",
+        "options": ["Travis Scott", "Drake", "Kanye West", "Jay-Z"],
+        "answer": "Travis Scott"
+    }
+]
+
+# Path to save the file
+file_path = "music_trivia.json"
+
+# Write the trivia data to a JSON file
+with open(file_path, "w") as file:
+    json.dump(music_trivia, file, indent=4)
+
+print(f"File '{file_path}' has been created successfully with music trivia!")
