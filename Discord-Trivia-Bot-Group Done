@@ -4,7 +4,7 @@ import random
 import json
 from discord.ext import commands, tasks
 
-TOKEN = "MTM1MzE3MDYxMzY2NTAwNTU3OA.Gj3vdM.1XEP3i-ncn6b9xuhxp_Rs_Yyw_A7ZdITorYU84"
+TOKEN = "YOUR_BOT_TOKEN"
 SCORES_FILE = "scores.json"
 TRIVIA_FILE = "music_trivia.json"
 
